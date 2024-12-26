@@ -17,12 +17,13 @@ public class RelatorioProdutos {
     System.out.println("Preço");
     double preco = sc.nextDouble();
 
-
     Produto produto = new Produto(nome, preco);
-
+    produto.setNome("Computador");
+    System.out.println("Atualização do produto "+produto.getNome());
     System.out.println(produto);
+    produto.setPreco(1200.00);
+    System.out.println("Atualização de valor "+produto.getPreco());
 
-    int quantidade;
     System.out.println("Informe um número para adicionar nos produtos de estoque:");
 
     produto.AdicionarProduto(sc.nextInt());
