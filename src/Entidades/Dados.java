@@ -16,10 +16,10 @@ public class Dados {
         this.nome = nome;
     }
 
-    public double getIdade() {
+    public double getPreco() {
         return preco;
     }
-    public void setIdade(double idade) {
+    public void setPreco(double idade) {
         this.preco = idade;
     }
 }

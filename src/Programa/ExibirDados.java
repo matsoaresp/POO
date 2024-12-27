@@ -18,8 +18,11 @@ public class ExibirDados {
 
                 String nomeDado = sc.nextLine();
                 double preco = sc.nextDouble();
-                dados[i] = new Dados(nomeDado, preco);
-                soma += dados[i].getIdade();
+            dados[i] = new Dados(nomeDado, preco);
+        }
+
+        for (int i = 0; i < n; i++) {
+            soma += dados[i].getPreco();
 
         }
         double avg = soma / n;
